@@ -103,6 +103,20 @@
             "description": "IP address type"
             }
         },
+        "api_key": {
+            "type": "string",
+            "defaultValue": "api_key",
+            "metadata": {
+            "description": "api_key"
+            }
+        },
+        "readonly_api_key": {
+            "type": "string",
+            "defaultValue": "readonly_api_key",
+            "metadata": {
+            "description": "readonly_api_key"
+            }
+        },
         "dnsNameLabel": {
             "type": "string",
             "defaultValue": "qdrant",

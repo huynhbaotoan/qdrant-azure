@@ -159,7 +159,20 @@
                                     "port": 6333
                                 }
                             ],
-                            "environmentVariables": [],
+                            "environmentVariables": [
+                                {
+                                    "name": "QDRANT__SERVICE__API_KEY",
+                                    "value": "[parameters('api_key')]"
+                                },
+                                {
+                                    "name": "QDRANT__SERVICE__READ_ONLY_API_KEY",
+                                    "value": "[parameters('readonly_api_key')]"
+                                },
+                                {
+                                    "name": "QDRANT__LOG_LEVEL",
+                                    "value": "info"
+                                }
+                            ],
                             "resources": {
                                 "requests": {
                                     "memoryInGB": "[parameters('memory')]",
